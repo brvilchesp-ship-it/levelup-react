@@ -1,23 +1,17 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import './App.css'
-import Cart from './components/pages/Cart'
-import Home from './components/pages/Home'
-
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import './App.css';
+import Home from './components/pages/Home';
+import Cart from './components/pages/Cart';
 
 function App() {
-
   return (
-
-   
-   <>
     <BrowserRouter>
       <Routes>
-        <Route path='/' Component= {Home}/>
-        <Route path='/cart' Component= {Cart}/>
+        <Route path="/" element={<Home />} />
+        <Route path="/cart" element={<Cart />} />
       </Routes>
-   </BrowserRouter>
-   </>
-  )
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;

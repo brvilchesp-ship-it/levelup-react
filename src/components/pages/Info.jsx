@@ -5,6 +5,7 @@ export default function Info() {
   
   <section id="info-extra" className="container">
     <div className="info">
+      <br/>
       <h2>Información Extra para el Usuario</h2>
     </div>
 
