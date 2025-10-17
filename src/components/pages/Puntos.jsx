@@ -4,6 +4,7 @@ export default function Puntos() {
   return (
 <section id="puntos" class="container">
     <h2>Puntos LevelUp & Niveles</h2>
+    <br/>
     <div className="card">
       <div className="content">
         <div style={{display:"flex", justifyContent:"space-between", alignItems:"center", gap:"12px", flexWrap:"wrap"}}>

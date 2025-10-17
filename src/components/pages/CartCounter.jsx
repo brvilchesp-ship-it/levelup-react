@@ -1,5 +1,7 @@
+import React from "react";
+
 export default function CartCounter({ cart }) {
-  const totalItems = cart.reduce((sum, item) => sum + item.qty, 0)
+  const totalItems = cart.reduce((sum, item) => sum + item.qty, 0);
 
   return (
     <div style={{
@@ -14,5 +16,6 @@ export default function CartCounter({ cart }) {
     }}>
       🛒 {totalItems}
     </div>
-  )
+  );
 }
+

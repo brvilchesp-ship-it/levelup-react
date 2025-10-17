@@ -1,4 +1,3 @@
-// src/components/pages/Header.jsx
 import React, { useEffect, useState } from "react";
 import CartButton from "./CartButton";
 
@@ -26,7 +25,7 @@ export default function Header({ cart, setCart, user, setUser, setRegistroOpen, 
   };
 
   return (
-    <header>
+    <header data-testid="header">
       <div className="container nav">
         <div className="brand">
           <img src="/img/logo.jpg" alt="Logo" className="logo" />
@@ -78,6 +77,7 @@ export default function Header({ cart, setCart, user, setUser, setRegistroOpen, 
       {/* Modal de perfil */}
       {perfilOpen && (
         <div
+          data-testid="perfil-modal"
           style={{
             display: "flex",
             position: "fixed",
@@ -110,7 +110,15 @@ export default function Header({ cart, setCart, user, setUser, setRegistroOpen, 
                 type="text"
                 value={nuevoNombre}
                 onChange={(e) => setNuevoNombre(e.target.value)}
-                style={{ width: "100%", padding: "6px", marginTop: "4px", color: "#fff", background: "#333", border: "none", borderRadius: "4px" }}
+                style={{
+                  width: "100%",
+                  padding: "6px",
+                  marginTop: "4px",
+                  color: "#fff",
+                  background: "#333",
+                  border: "none",
+                  borderRadius: "4px"
+                }}
               />
             </label>
             <label>
@@ -119,7 +127,15 @@ export default function Header({ cart, setCart, user, setUser, setRegistroOpen, 
                 type="text"
                 value={user.email}
                 disabled
-                style={{ width: "100%", padding: "6px", marginTop: "4px", color: "#fff", background: "#333", border: "none", borderRadius: "4px" }}
+                style={{
+                  width: "100%",
+                  padding: "6px",
+                  marginTop: "4px",
+                  color: "#fff",
+                  background: "#333",
+                  border: "none",
+                  borderRadius: "4px"
+                }}
               />
             </label>
             <div style={{ display: "flex", justifyContent: "flex-end", gap: "10px" }}>
